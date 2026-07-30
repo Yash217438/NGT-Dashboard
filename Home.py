@@ -1,4 +1,5 @@
 import streamlit as st
+from Security.auth import login, check_login
 
 st.set_page_config(
     page_title="NGT Dashboard",
