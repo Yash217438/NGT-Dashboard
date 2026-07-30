@@ -5,6 +5,10 @@ st.set_page_config(
     layout="wide"
 )
 
+if not check_login():
+    login()
+    st.stop()
+    
 st.title("NGT Sewage Management Dashboard")
 
 st.markdown("""
@@ -13,7 +17,4 @@ st.markdown("""
 - ULB 2023
 - ULB 2025
 - ULB 2026
-- STP 2023
-- STP 2025
-- STP 2026
 """)
